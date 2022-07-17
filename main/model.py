@@ -1,12 +1,12 @@
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
-from nets.resnet import ResNetBackbone
-from nets.module import PositionNet, RotationNet, FaceRegressor, BoxNet, HandRoI, FaceRoI
-from nets.loss import CoordLoss, ParamLoss, CELoss
-from utils.human_models import smpl_x
-from utils.transforms import rot6d_to_axis_angle, restore_bbox
-from config import cfg
+from common.nets.resnet import ResNetBackbone
+from common.nets.module import PositionNet, RotationNet, FaceRegressor, BoxNet, HandRoI, FaceRoI
+from common.nets.loss import CoordLoss, ParamLoss, CELoss
+from common.utils.human_models import smpl_x
+from common.utils.transforms import rot6d_to_axis_angle, restore_bbox
+from main.config import cfg
 import math
 import copy
 import time
